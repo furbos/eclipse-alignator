@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.ui.IEditorInput"
+            id="com.michalfabry.alignator.contribution1">
+         <menu
+               label="Alignator"
+               path="additions"
+               id="com.michalfabry.alignator.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Align it!"
+               class="com.michalfabry.alignator.popup.actions.alignit"
+               menubarPath="com.michalfabry.alignator.menu1/group1"
+               enablesFor="1"
+               id="com.michalfabry.alignator.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
